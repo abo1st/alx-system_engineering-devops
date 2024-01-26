@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Displays the time for 12 horus and 59 minutes.
+#   Displays hours from 0 to 12
+#   Displays minutes from 1 to 59
+
+hourz=0
+
+while [ $hourz -le 12 ]
+do
+  echo "Hourz: $hourz"
+  minutez=1
+  while [ $minutez -le 59 ]
+  do
+    echo "$minutez"
+    (( minutez++ ))
+  done
+  (( hourz++ ))
+done
